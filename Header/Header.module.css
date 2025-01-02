@@ -29,7 +29,12 @@
     a:hover,
     a:focus-visible {
       filter: drop-shadow(
-        0px 0px 8px rgba(from var(--header-foreground-color, #fff) r g b / 0.75)
+        0px 0px 8px
+          rgba(
+            from
+              var(--header-shadow-color, var(--header-foreground-color, #fff)) r
+              g b / 0.75
+          )
       );
     }
 
