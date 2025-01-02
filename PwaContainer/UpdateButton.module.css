@@ -1,0 +1,15 @@
+.refresh {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(from var(--theme-color) r g b / 1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(from var(--theme-color) r g b / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 50px rgba(from var(--theme-color) r g b / 0);
+  }
+}
