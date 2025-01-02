@@ -4,12 +4,24 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(from var(--theme-color) r g b / 1);
+    box-shadow: 0 0 0 0
+      hsla(
+        from var(--header-background-color, var(--theme-color)) h s
+          calc(l * 1.5) / 1
+      );
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(from var(--theme-color) r g b / 0);
+    box-shadow: 0 0 0 10px
+      hsla(
+        from var(--header-background-color, var(--theme-color)) h s
+          calc(l * 1.5) / 0
+      );
   }
   100% {
-    box-shadow: 0 0 0 50px rgba(from var(--theme-color) r g b / 0);
+    box-shadow: 0 0 0 50px
+      hsla(
+        from var(--header-background-color, var(--theme-color)) h s
+          calc(l * 1.5) / 0
+      );
   }
 }
