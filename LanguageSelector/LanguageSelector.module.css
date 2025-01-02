@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 8px;
   align-items: center;
+  justify-content: center;
+
+  flex: 1;
 
   a {
     padding: 0.5em;
