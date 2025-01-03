@@ -2,6 +2,7 @@ import { ReactNode, useRef, useEffect } from "react";
 import classes from "./Modal.module.css";
 import { MdClose } from "react-icons/md";
 import "./Modal.css";
+import { createPortal } from "react-dom";
 
 type Props = {
   title: string;
@@ -22,7 +23,7 @@ export const Modal = ({ children, title, className, open, onClose }: Props) => {
     }
   }, [open]);
 
-  return (
+  return createPortal(
     <dialog
       ref={dialogRef}
       onClose={onClose}
@@ -35,6 +36,7 @@ export const Modal = ({ children, title, className, open, onClose }: Props) => {
         </button>
       </div>
       <div className={classes.content}>{children}</div>
-    </dialog>
+    </dialog>,
+    document.body
   );
 };
