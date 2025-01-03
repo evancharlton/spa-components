@@ -4,24 +4,12 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0
-      hsla(
-        from var(--header-background-color, var(--theme-color)) h s
-          calc(l * 1.5) / 1
-      );
+    box-shadow: 0 0 0 0px #fff;
   }
   70% {
-    box-shadow: 0 0 0 10px
-      hsla(
-        from var(--header-background-color, var(--theme-color)) h s
-          calc(l * 1.5) / 0
-      );
+    box-shadow: 0 0 0 10px #fff0;
   }
   100% {
-    box-shadow: 0 0 0 50px
-      hsla(
-        from var(--header-background-color, var(--theme-color)) h s
-          calc(l * 1.5) / 0
-      );
+    box-shadow: 0 0 0 50px #fff0;
   }
 }
