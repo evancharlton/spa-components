@@ -13,6 +13,10 @@
       flex-direction: row;
       align-items: center;
       gap: 1ch;
+
+      padding: 0.5em 1em;
+      border-radius: 0.5em;
+      font-size: 1.2em;
     }
   }
 
