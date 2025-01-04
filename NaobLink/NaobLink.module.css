@@ -1,0 +1,10 @@
+.word {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+
+  svg {
+    color: #999a;
+    font-size: 0.6em;
+  }
+}
