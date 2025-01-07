@@ -72,4 +72,18 @@
       opacity: 0.5;
     }
   }
+
+  .apps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid #999a;
+    padding-top: 8px;
+
+    img {
+      height: 2em;
+      aspect-ratio: 1 / 1;
+    }
+  }
 }

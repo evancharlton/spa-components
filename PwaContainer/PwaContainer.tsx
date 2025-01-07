@@ -6,7 +6,19 @@ const WINDOW_RELOAD = () => {
   window.location.reload();
 };
 
-export const PwaContainer = ({ children }: { children: ReactNode }) => {
+export type AppId =
+  | "bokstavboks"
+  | "ordle"
+  | "ordlabyrint"
+  | "spoke"
+  | "stavehumle";
+
+type Props = {
+  appId: AppId;
+  children: ReactNode;
+};
+
+export const PwaContainer = ({ children, appId }: Props) => {
   const [updateNeeded, setUpdateNeeded] = useState(false);
   const [performUpdate, setPerformUpdate] = useState<() => void>(
     () => WINDOW_RELOAD
@@ -41,6 +53,7 @@ export const PwaContainer = ({ children }: { children: ReactNode }) => {
         updateNeeded,
         performUpdate,
         error,
+        appId,
       }}
     >
       {children}
