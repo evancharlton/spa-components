@@ -47,6 +47,7 @@
 
   .action {
     padding: 4px 0;
+    border-color: transparent;
     border-top: 1px solid #999a;
 
     display: flex;
