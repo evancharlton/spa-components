@@ -45,7 +45,7 @@ export const ShareButton = ({
 
   useEffect(() => {
     setShareState(
-      navigator.canShare?.({ text: shareText }) ? "waiting" : "unavailable"
+      navigator.canShare?.({ text: shareText }) ? "waiting" : "unavailable",
     );
   }, [shareText]);
 

@@ -37,6 +37,6 @@ export const Modal = ({ children, title, className, open, onClose }: Props) => {
       </div>
       <div className={classes.content}>{children}</div>
     </dialog>,
-    document.body
+    document.body,
   );
 };

@@ -21,7 +21,7 @@ type Props = {
 export const PwaContainer = ({ children, appId }: Props) => {
   const [updateNeeded, setUpdateNeeded] = useState(false);
   const [performUpdate, setPerformUpdate] = useState<() => void>(
-    () => WINDOW_RELOAD
+    () => WINDOW_RELOAD,
   );
   const [error, setError] = useState<unknown | undefined>(undefined);
 
