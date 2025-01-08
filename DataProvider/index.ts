@@ -1,0 +1,1 @@
+export { useLanguageData } from "./useLanguageData";
