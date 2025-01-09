@@ -34,3 +34,15 @@ export const randomItem = <T>(
 ): T => {
   return items[Math.floor(random() * items.length)];
 };
+
+export const hashItem = <T>(
+  items: {
+    [index: number]: T;
+    length: number;
+  },
+  hash: number,
+): T => {
+  const len = items.length;
+  // JS supports negative mods, so we need to force it to not be negative.
+  return items[((hash % len) + len) % len];
+};
