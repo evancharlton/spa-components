@@ -6,11 +6,19 @@ type Props = {
   text: string;
   className?: string;
   onClick: () => void;
+  disabled?: boolean;
 };
 
-export const Action = ({ icon: Icon, text, className, onClick }: Props) => {
+export const Action = ({
+  icon: Icon,
+  text,
+  className,
+  onClick,
+  disabled,
+}: Props) => {
   return (
     <button
+      disabled={disabled}
       className={[classes.action, className].filter(Boolean).join(" ")}
       onClick={onClick}
     >
