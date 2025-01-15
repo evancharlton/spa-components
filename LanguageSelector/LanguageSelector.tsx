@@ -25,7 +25,7 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
 
   const updateLanguage = useCallback(
     (lang: Language) => {
-      sessionStorage.setItem(key, lang);
+      localStorage.setItem(key, lang);
     },
     [key],
   );
@@ -54,7 +54,7 @@ export const LanguageProvider = ({ children }: { children?: ReactNode }) => {
       return;
     }
 
-    const storedLang = sessionStorage.getItem(key);
+    const storedLang = localStorage.getItem(key);
     if (!storedLang) {
       return;
     }
