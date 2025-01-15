@@ -1,1 +1,5 @@
-export { LanguageSelector as default } from "./LanguageSelector";
+export {
+  LanguageSelector as default,
+  LanguageProvider,
+} from "./LanguageSelector";
+export { useLanguage, type Language } from "./context";
