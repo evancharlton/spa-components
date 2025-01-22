@@ -8,6 +8,7 @@ const WINDOW_RELOAD = () => {
 
 export type AppId =
   | "bokstavboks"
+  | "ordkart"
   | "ordle"
   | "ordlabyrint"
   | "spoke"
