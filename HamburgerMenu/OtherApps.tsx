@@ -12,6 +12,7 @@ const APPS: Record<AppId, { logo: string; url: string }> = {
   ordkart: { logo: "", url: "https://ordkart.no" },
   ordlabyrint: { logo: ordlabyrint, url: "https://ordlabyrint.no" },
   ordle: { logo: ordle, url: "https://ordle-app.no" },
+  ordtorden: { logo: "", url: "https://ordtorden.no" },
   spoke: { logo: spoke, url: "https://spøke.no" },
   stavehumle: { logo: stavehumle, url: "https://stavehumle.no" },
 };

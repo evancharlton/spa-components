@@ -11,6 +11,7 @@ export type AppId =
   | "ordkart"
   | "ordle"
   | "ordlabyrint"
+  | "ordtorden"
   | "spoke"
   | "stavehumle";
 
