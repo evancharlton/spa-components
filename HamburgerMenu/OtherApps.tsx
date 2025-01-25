@@ -7,7 +7,7 @@ import stavehumle from "./logos/stavehumle.svg";
 import { Link } from "react-router";
 import { AppId, usePwa } from "../PwaContainer";
 
-const APPS: Record<AppId, { logo: string; url: string }> = {
+const APPS: Record<Exclude<AppId, "ordkart">, { logo: string; url: string }> = {
   bokstavboks: { logo: bokstavboks, url: "https://bokstavboks.no" },
   ordlabyrint: { logo: ordlabyrint, url: "https://ordlabyrint.no" },
   ordle: { logo: ordle, url: "https://ordle-app.no" },
