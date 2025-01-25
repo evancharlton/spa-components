@@ -7,8 +7,9 @@ import stavehumle from "./logos/stavehumle.svg";
 import { Link } from "react-router";
 import { AppId, usePwa } from "../PwaContainer";
 
-const APPS: Record<Exclude<AppId, "ordkart">, { logo: string; url: string }> = {
+const APPS: Record<AppId, { logo: string; url: string }> = {
   bokstavboks: { logo: bokstavboks, url: "https://bokstavboks.no" },
+  ordkart: { logo: "", url: "https://ordkart.no" },
   ordlabyrint: { logo: ordlabyrint, url: "https://ordlabyrint.no" },
   ordle: { logo: ordle, url: "https://ordle-app.no" },
   spoke: { logo: spoke, url: "https://spøke.no" },
@@ -22,6 +23,7 @@ export const OtherApps = () => {
     <div className={classes.apps}>
       {Object.entries(APPS)
         .filter(([id]) => id !== appId)
+        .filter(([_id, { logo }]) => !!logo)
         .map(([appId, { logo, url }]) => (
           <Link key={appId} to={url} target={appId}>
             <img src={logo} alt={`ikon til ${appId}`} />
