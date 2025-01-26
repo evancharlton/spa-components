@@ -16,7 +16,7 @@ export const RandomProvider = ({ children, seed }: Props) => {
   );
 
   return (
-    <RandomContext.Provider value={{ random, create, randomItem }}>
+    <RandomContext.Provider value={{ random, seed, create, randomItem }}>
       {children}
     </RandomContext.Provider>
   );

@@ -10,7 +10,12 @@ export type RandomItem = <T = unknown>(
 ) => T;
 
 export const RandomContext = createContext<
-  | { random: PRNG; randomItem: RandomItem; create: (seed: Seed) => PRNG }
+  | {
+      random: PRNG;
+      seed: Seed;
+      randomItem: RandomItem;
+      create: (seed: Seed) => PRNG;
+    }
   | undefined
 >(undefined);
 
