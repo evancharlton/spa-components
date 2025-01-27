@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   color: var(--header-button-color, currentColor);
+  max-width: 100vw;
 
   background-color: var(
     --header-background-color,
@@ -13,6 +14,9 @@
   h1 {
     padding: 8px;
     margin: 8px;
+    flex: 1 1 auto;
+    min-width: 0px;
+    overflow-x: hidden;
 
     a {
       display: flex;

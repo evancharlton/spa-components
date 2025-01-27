@@ -38,7 +38,7 @@ export const HamburgerMenu = ({ children, open, onClose, onOpen }: Props) => {
   return (
     <>
       <ButtonsPortal>
-        <button onClick={() => onOpen?.()}>
+        <button onClick={() => onOpen?.()} style={{ order: 100 }}>
           <MdMenu />
         </button>
       </ButtonsPortal>

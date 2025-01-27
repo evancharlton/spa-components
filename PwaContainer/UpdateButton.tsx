@@ -14,6 +14,7 @@ export const UpdateButton = () => {
       title="oppdater appen"
       onClick={() => performUpdate()}
       className={classes.refresh}
+      style={{ order: 10 }}
     >
       <MdOutlineRefresh />
     </button>
